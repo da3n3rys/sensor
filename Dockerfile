@@ -1,4 +1,4 @@
-FROM resin/armv7hf-debian:jessie
+FROM balenalib/armv7hf-debian:jessie
 MAINTAINER http://sitch.io
 
 ENV FEED_RADIO_TARGETS="GSM"
@@ -10,8 +10,6 @@ ENV FEED_URL_BASE="https://github.com/sitch-io/sensor_feed/raw/master/feed/"
 ENV MCC_LIST="214"
 
 ENV MODE="full"
-
-RUN printf "deb http://http.debian.net/debian wheezy main contrib non-free" > /etc/apt/sources.list
 
 COPY apt-install /
 
