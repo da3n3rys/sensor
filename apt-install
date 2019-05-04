@@ -1,8 +1,8 @@
 expect=5.45-6
 logrotate=3.8.7-1+b1
 gcc=4:4.9.2-2
-gpsd=3.11-3
-gpsd-clients=3.11-3
+gpsd
+gpsd-clients
 kmod=18-3
 lshw=02.17-1.1
 libfftw3-double3=3.3.4-2
