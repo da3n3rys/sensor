@@ -1,6 +1,7 @@
 psutil==5.4.8
 pyserial==3.4
 pyyaml==4.2b1
+pyproj==1.9.6
 gps3==0.33.3
 hvac==0.7.1
 kalibrate==2.1.0
