@@ -3,13 +3,15 @@ MAINTAINER http://sitch.io
 
 ENV FEED_RADIO_TARGETS="GSM"
 ENV GSM_MODEM_BAND="ALL_BAND"
-ENV KAL_BAND="GSM850"
+ENV KAL_BAND="GSM900"
 ENV KAL_GAIN="60"
 ENV KAL_THRESHOLD="1000000"
 ENV FEED_URL_BASE="https://github.com/sitch-io/sensor_feed/raw/master/feed/"
-ENV MCC_LIST="310,311,312,316"
+ENV MCC_LIST="214"
 
 ENV MODE="full"
+
+RUN printf "deb http://http.debian.net/debian wheezy main contrib non-free" > /etc/apt/sources.list
 
 COPY apt-install /
 
