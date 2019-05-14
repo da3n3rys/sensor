@@ -30,7 +30,7 @@ class GsmModem(object):
         self.config_dump = 'ATV1Q0&V \r\n'
         print("GSM: opening serial port: %s" % ser_port)
         time.sleep(10)
-        self.serconn = serial.Serial(ser_port, 4800, timeout=1)
+        self.serconn = serial.Serial(ser_port, 9600, timeout=1)
         ser_open_iter = 0
         while not self.serconn.is_open:
             print("GSM: Attempting to open %s again..." % ser_port)
