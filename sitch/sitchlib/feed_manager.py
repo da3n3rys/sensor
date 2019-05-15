@@ -58,12 +58,12 @@ class FeedManager(object):
                                                     self.url_base,
                                                     feed_id)
             self.cgi_feed_files.append(feed_file)
-        for feed_id in self.state_list:
+        """for feed_id in self.state_list:
             feed_file = FeedManager.place_feed_file(self.feed_dir,
                                                     self.url_base,
                                                     feed_id)
             self.arfcn_feed_files.append(feed_file)
-        print("FeedManager: Finished pulling all feed files")
+        print("FeedManager: Finished pulling all feed files")"""
         return
 
     def update_feed_db(self):
